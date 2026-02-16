@@ -3,6 +3,7 @@ package com.comcast.HMS.generic.WebDriverUtility;
 import java.time.Duration;
 import java.util.Set;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -17,9 +18,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebDriverUtility {
 	
-	
+	WebDriver driver;
 	public WebDriver launchBrowser(String browser) {
-		WebDriver driver;
+		
 		
 		if(browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
@@ -87,6 +88,11 @@ public class WebDriverUtility {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].checked = true;", element);
 		
+	}
+	public void alert(WebDriver driver) {
+	Alert a = driver.switchTo().alert();
+	a.accept();
+	
 	}
 	
 	public void closeBrowser(WebDriver driver) {

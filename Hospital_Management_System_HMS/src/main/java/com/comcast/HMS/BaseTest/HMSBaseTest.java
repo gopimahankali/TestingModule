@@ -12,24 +12,30 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.comcarst.HMS.generic.databaseutility.DatabaseUtility;
+import com.comcast.HMS.ObjectRepositoryUtility.BookAppointmentPage;
 import com.comcast.HMS.ObjectRepositoryUtility.DashBoardPage;
 import com.comcast.HMS.ObjectRepositoryUtility.HomePage;
 import com.comcast.HMS.ObjectRepositoryUtility.LoginPage;
+import com.comcast.HMS.generic.WebDriverUtility.JavaUtility;
 import com.comcast.HMS.generic.WebDriverUtility.WebDriverUtility;
 import com.comcast.HMS.generic.fileutility.ExcelUtility;
 import com.comcast.HMS.generic.fileutility.FileUtility;
 
 public class HMSBaseTest {
 	
-	DatabaseUtility db = new DatabaseUtility();
-	FileUtility file = new FileUtility();
-	ExcelUtility excel = new ExcelUtility();
-	WebDriverUtility web = new WebDriverUtility();
-	WebDriver driver = null;
+	protected DatabaseUtility db = new DatabaseUtility();
+	protected FileUtility file = new FileUtility();
+	protected ExcelUtility excel = new ExcelUtility();
+	protected WebDriverUtility web = new WebDriverUtility();
+	protected JavaUtility java = new JavaUtility();
+	protected WebDriver driver = null;
+	public static WebDriver sdriver = null;
+	
 	
 	@BeforeSuite
 	public void conficBS() throws Exception {
 		db.getDbconnection();
+		System.out.println("connected to db");
 		
 	}
 	
@@ -43,36 +49,27 @@ public class HMSBaseTest {
 		}else {
 			driver = new FirefoxDriver();
 		}
-		web.maximize(driver);
+		sdriver = driver;
 		
 		
 	}
-	
+
 	@BeforeMethod()
 	public void configBM() throws Exception {
-		HomePage home = PageFactory.initElements(driver, HomePage.class);
-		LoginPage login = PageFactory.initElements(driver, LoginPage.class);
-		web.implicitWait(driver,20);
 		String url = file.getDataFromPrpertiesFile("Url");
-		web.url(driver, url);
-		home.getLogins().click();
-		String parent = web.getWindow(driver);
-		home.getPatientLogin().click();
-	    web.switchWindow(driver, parent);
+		String username = file.getDataFromPrpertiesFile("Patient");
+		String password = file.getDataFromPrpertiesFile("Password2");
+		LoginPage  login = new LoginPage (driver);
+		login.loginToApplication(url, username, password);
 	    
 	}
 	
 	@AfterMethod
 	public void closeApp() {
-		try {
-			DashBoardPage dash = PageFactory.initElements(driver, DashBoardPage.class);
+			DashBoardPage dash = new DashBoardPage(driver);
 			dash.getUser().click();
 			web.explicitWait(driver, dash.getLogout(), 10);
 			dash.getLogout().click();
-		} catch (Exception e) {
-			System.out.println("Logout skipped: user not logged in");
-	  }
-		
 	}
 	
 	@AfterClass

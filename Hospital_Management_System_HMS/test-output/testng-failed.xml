@@ -9,7 +9,7 @@
           <include name="configAS"/>
           <include name="configBM"/>
           <include name="ConfigAC"/>
-          <include name="Appointment" invocation-numbers="0 1 2 3 4"/>
+          <include name="Appointment"/>
           <include name="closeApp"/>
           <include name="conficBS"/>
         </methods>
