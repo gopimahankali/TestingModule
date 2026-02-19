@@ -7,6 +7,8 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -90,9 +92,16 @@ public class WebDriverUtility {
 		
 	}
 	public void alert(WebDriver driver) {
-	Alert a = driver.switchTo().alert();
-	a.accept();
-	
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	 	Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+	    alert.accept();
+	}
+	public void ScreenShot(WebDriver driver) {
+		
+	}
+	public String getTitle(WebDriver driver) {
+		String Title = driver.getTitle();
+		return Title;
 	}
 	
 	public void closeBrowser(WebDriver driver) {

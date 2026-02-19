@@ -18,6 +18,12 @@ public class DashBoardPage {
 	private WebElement logout;
 	@FindBy(xpath = "//span[@class ='username']")
 	private WebElement user;
+	@FindBy(xpath = "//span[text()=' Appointment History ']")
+	private WebElement appointmentHistory;
+
+	public WebElement getAppointmentHistory() {
+		return appointmentHistory;
+	}
 
 	public WebElement getLogout() {
 		return logout;
