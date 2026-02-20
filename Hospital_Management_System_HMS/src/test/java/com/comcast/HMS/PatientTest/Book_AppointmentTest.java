@@ -47,7 +47,7 @@ public class Book_AppointmentTest extends HMSBaseTest  {
             web.alert(driver);
            
 	}
-	@Test(priority = 2)
+	@Test(priority = 3)
 		public void AppointmentHistory() {
 		User_Appointment_History user = new User_Appointment_History(driver);
 		 DashBoardPage dash = new DashBoardPage(driver);
@@ -59,6 +59,10 @@ public class Book_AppointmentTest extends HMSBaseTest  {
 		 web.argument(driver, user.getCancel());
 		 web.alert(driver);
 		 UtilityClassObject.getTest().log(Status.INFO,"Appointment Canceled Successfully");
+	}
+	@Test(priority = 2)
+	public void CheckAppointment() {
+		
 	}
 	
 }

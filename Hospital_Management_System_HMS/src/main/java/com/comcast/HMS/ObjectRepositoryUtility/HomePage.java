@@ -15,11 +15,11 @@ public class HomePage {
 
 	@FindBy(linkText = "Logins")
 	private WebElement logins;
-	@FindBy(xpath ="(//button[text()='Click Here'])[1]")
+	@FindBy(xpath ="//div[@class='blog-single-det']//descendant::a[@href='hms/user-login.php']")
 	private WebElement patientLogin;
-	@FindBy(xpath ="(//button[text()='Click Here'])[2]")
+	@FindBy(xpath ="//a[@href='hms/doctor']")
 	private WebElement doctorLogin;
-	@FindBy(xpath = "(//button[text()='Click Here'])[3]")
+	@FindBy(xpath = "//a[@href='hms/admin']")
 	private WebElement adminLogin;
 	
 	public WebElement getLogins() {
