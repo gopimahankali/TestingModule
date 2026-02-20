@@ -3,19 +3,12 @@ package com.comcast.HMS.PatientTest;
  * This class is used to book an appointment and cancel the appointment
  * @author Gopi Shankar Mahankali
  */
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
+
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.comcast.HMS.BaseTest.HMSBaseTest;
-import com.comcast.HMS.ListenerUtility.Listener_Implementation;
 import com.comcast.HMS.ObjectRepositoryUtility.BookAppointmentPage;
 import com.comcast.HMS.ObjectRepositoryUtility.DashBoardPage;
 import com.comcast.HMS.ObjectRepositoryUtility.User_Appointment_History;

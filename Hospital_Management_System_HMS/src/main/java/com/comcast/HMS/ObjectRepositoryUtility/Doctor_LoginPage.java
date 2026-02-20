@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Doctor_LoginPage {
+import com.comcast.HMS.generic.WebDriverUtility.WebDriverUtility;
+
+public class Doctor_LoginPage extends WebDriverUtility {
 	WebDriver driver;
 	public Doctor_LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -27,5 +29,19 @@ public class Doctor_LoginPage {
 		return loginButton;
 	}
 	
-
+	public void loginToApplication(String url, String userName, String password) {
+		implicitWait(driver, 10);
+		url(driver, url);
+		maximize(driver);
+		HomePage home = new HomePage(driver);
+		home.getLogins().click();
+		String parent =getWindow(driver);
+		home.getDoctorLogin().click();
+		switchWindow(driver,parent);
+		getUserName().sendKeys(userName);
+		getPassword().sendKeys(password);
+		getLoginButton().click();
+		
+	
+	}
 }

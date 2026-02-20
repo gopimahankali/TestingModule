@@ -1,53 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-19T12:07:43 IST" name="Suite" finished-at="2026-02-19T12:07:54 IST" duration-ms="10966">
+  <suite started-at="2026-02-20T15:52:12 IST" name="Default suite" finished-at="2026-02-20T15:52:30 IST" duration-ms="17406">
     <groups>
     </groups>
-    <test started-at="2026-02-19T12:07:43 IST" name="Test" finished-at="2026-02-19T12:07:54 IST" duration-ms="10966">
-      <class name="com.comcast.HMS.PatientTest.Book_AppointmentTest">
-        <test-method is-config="true" signature="conficBS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:42 IST" name="conficBS" finished-at="2026-02-19T12:07:43 IST" duration-ms="702" status="PASS">
+    <test started-at="2026-02-20T15:52:12 IST" name="Default test" finished-at="2026-02-20T15:52:30 IST" duration-ms="17406">
+      <class name="com.comcast.HMS.DoctorTest.Add_PatientTest">
+        <test-method is-config="true" signature="conficBS()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:12 IST" name="conficBS" finished-at="2026-02-20T15:52:12 IST" duration-ms="461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:43 IST" name="configBC" finished-at="2026-02-19T12:07:47 IST" duration-ms="4254" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:13 IST" name="openBrowser" finished-at="2026-02-20T15:52:15 IST" duration-ms="2808" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:47 IST" name="configBM" finished-at="2026-02-19T12:07:49 IST" duration-ms="1303" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:18 IST" name="login" finished-at="2026-02-20T15:52:19 IST" duration-ms="1120" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="BookAppointment()[pri:1, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:49 IST" name="BookAppointment" finished-at="2026-02-19T12:07:50 IST" duration-ms="1674" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="addPatient1(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:19 IST" name="addPatient1" data-provider="PatientData1" finished-at="2026-02-20T15:52:19 IST" duration-ms="549" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John Doey]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12 Park Street New York]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[johndoe1@test.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Fever ]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BookAppointment -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:50 IST" name="closeApp" finished-at="2026-02-19T12:07:51 IST" duration-ms="360" status="PASS">
+        </test-method> <!-- addPatient1 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:19 IST" name="logout" finished-at="2026-02-20T15:52:19 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:51 IST" name="configBM" finished-at="2026-02-19T12:07:52 IST" duration-ms="737" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:20 IST" name="login" finished-at="2026-02-20T15:52:21 IST" duration-ms="526" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="AppointmentHistory()[pri:2, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:52 IST" name="AppointmentHistory" finished-at="2026-02-19T12:07:52 IST" duration-ms="406" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="addPatient2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:21 IST" name="addPatient2" data-provider="PatientData2" finished-at="2026-02-20T15:52:21 IST" duration-ms="467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sarah Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[45 Lake View Road Chicago]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sarah.smith@test.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8123456790]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[45]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Type 2 Diabetes ]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AppointmentHistory -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:52 IST" name="closeApp" finished-at="2026-02-19T12:07:52 IST" duration-ms="384" status="PASS">
+        </test-method> <!-- addPatient2 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:21 IST" name="logout" finished-at="2026-02-20T15:52:21 IST" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:52 IST" name="ConfigAC" finished-at="2026-02-19T12:07:54 IST" duration-ms="1435" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:22 IST" name="login" finished-at="2026-02-20T15:52:23 IST" duration-ms="1568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addPatient3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:23 IST" name="addPatient3" data-provider="PatientData3" finished-at="2026-02-20T15:52:24 IST" duration-ms="444" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amit Kumar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[89 MG Road Banglore]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[amit.k@test.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[7690482153]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[52]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Hypertension Follow-up ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPatient3 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:24 IST" name="logout" finished-at="2026-02-20T15:52:24 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:24 IST" name="login" finished-at="2026-02-20T15:52:26 IST" duration-ms="1408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addPatient4(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:26 IST" name="addPatient4" data-provider="PatientData4" finished-at="2026-02-20T15:52:26 IST" duration-ms="554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Emily Johnson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[230 Sunset Blvd Los Angeles]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[emily.j@test.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9347618205]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[26]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Migraine ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPatient4 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:26 IST" name="logout" finished-at="2026-02-20T15:52:26 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:27 IST" name="login" finished-at="2026-02-20T15:52:29 IST" duration-ms="1772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="addPatient5(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:29 IST" name="addPatient5" data-provider="PatientData5" finished-at="2026-02-20T15:52:29 IST" duration-ms="489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Michael Brown]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[77 King Street Toronto]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[michael.b@test.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6583921470]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[55]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Chest Pain ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPatient5 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:29 IST" name="logout" finished-at="2026-02-20T15:52:29 IST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:29 IST" name="ConfigAC" finished-at="2026-02-20T15:52:30 IST" duration-ms="650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@74f0ea28]" started-at="2026-02-19T12:07:54 IST" name="configAS" finished-at="2026-02-19T12:07:54 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.HMS.DoctorTest.Add_PatientTest@7b2bbc3]" started-at="2026-02-20T15:52:30 IST" name="configAS" finished-at="2026-02-20T15:52:30 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.comcast.HMS.PatientTest.Book_AppointmentTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.comcast.HMS.DoctorTest.Add_PatientTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -31,6 +31,8 @@ public class Doctor_DashboardPage {
 	private WebElement changePassword;
 	@FindBy(xpath  = "//ul[contains(@class,'dropdown')]//descendant::a[contains(text(),'Log')]")
 	private WebElement logout;
+	@FindBy(xpath  = "//a[@class='dropdown-toggle']")
+	private WebElement user;
 	
 	public WebElement getViewAppointmentHistory() {
 		return viewAppointmentHistory;
@@ -61,6 +63,9 @@ public class Doctor_DashboardPage {
 	}
 	public WebElement getSearch() {
 		return search;
+	}
+	public WebElement getUser() {
+		return user;
 	}
 
 }

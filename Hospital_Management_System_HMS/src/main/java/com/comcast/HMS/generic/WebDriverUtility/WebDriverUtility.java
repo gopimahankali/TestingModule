@@ -78,6 +78,7 @@ public class WebDriverUtility {
 		js.executeScript("arguments[0].click();",element);
 		
 	}
+
 	
 	public void waitForPresence(WebDriver driver, WebElement element) {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
