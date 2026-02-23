@@ -9,14 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17,406</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,131</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.comcast.HMS.DoctorTest.Add_PatientTest</td><td><a href="#m0">addPatient1</a></td><td rowspan="1">1771582939254</td><td rowspan="1">549</td></tr><tr class="passedeven"><td><a href="#m1">addPatient2</a></td><td rowspan="1">1771582941111</td><td rowspan="1">467</td></tr><tr class="passedeven"><td><a href="#m2">addPatient3</a></td><td rowspan="1">1771582943875</td><td rowspan="1">444</td></tr><tr class="passedeven"><td><a href="#m3">addPatient4</a></td><td rowspan="1">1771582946273</td><td rowspan="1">554</td></tr><tr class="passedeven"><td><a href="#m4">addPatient5</a></td><td rowspan="1">1771582949156</td><td rowspan="1">489</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.comcast.HMS.PatientTest.Book_AppointmentTest</td><td><a href="#m0">BookAppointment</a></td><td rowspan="1">1771833392086</td><td rowspan="1">2223</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.comcast.HMS.DoctorTest.Add_PatientTest#addPatient1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>John Doey</td><td>12 Park Street New York</td><td>Male</td><td>johndoe1@test.com</td><td>9876543210</td><td>13</td><td>Fever </td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.comcast.HMS.DoctorTest.Add_PatientTest#addPatient2</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Sarah Smith</td><td>45 Lake View Road Chicago</td><td>Female</td><td>sarah.smith@test.com</td><td>8123456790</td><td>45</td><td>Type 2 Diabetes </td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.comcast.HMS.DoctorTest.Add_PatientTest#addPatient3</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Amit Kumar</td><td>89 MG Road Banglore</td><td>Male</td><td>amit.k@test.com</td><td>7690482153</td><td>52</td><td>Hypertension Follow-up </td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.comcast.HMS.DoctorTest.Add_PatientTest#addPatient4</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Emily Johnson</td><td>230 Sunset Blvd Los Angeles</td><td>Female</td><td>emily.j@test.com</td><td>9347618205</td><td>26</td><td>Migraine </td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.comcast.HMS.DoctorTest.Add_PatientTest#addPatient5</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Michael Brown</td><td>77 King Street Toronto</td><td>Male</td><td>michael.b@test.com</td><td>6583921470</td><td>55</td><td>Chest Pain </td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.comcast.HMS.PatientTest.Book_AppointmentTest#BookAppointment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because the return value of &quot;com.comcast.HMS.generic.WebDriverUtility.UtilityClassObject.getTest()&quot; is null
+	at com.comcast.HMS.PatientTest.Book_AppointmentTest.BookAppointment(Book_AppointmentTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
