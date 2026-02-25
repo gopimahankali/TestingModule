@@ -47,7 +47,7 @@ public class HMSBaseTest {
 	
 	@BeforeClass
 	public void configBC() throws Exception {
-		HomePage home = PageFactory.initElements(driver, HomePage.class);
+		
 		EdgeOptions options = new EdgeOptions();
 		ChromeOptions opt = new ChromeOptions();
 		Map<String, Object> set = new HashMap<>();
@@ -63,6 +63,7 @@ public class HMSBaseTest {
 		}else {
 			driver = new EdgeDriver(options);
 	}
+		HomePage home = PageFactory.initElements(driver, HomePage.class);
 		sdriver = driver;
 		UtilityClassObject.setDriver(driver);
 		

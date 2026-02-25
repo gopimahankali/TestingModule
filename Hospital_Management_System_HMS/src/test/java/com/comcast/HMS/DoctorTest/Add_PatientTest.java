@@ -2,12 +2,14 @@ package com.comcast.HMS.DoctorTest;
 
 
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.comcast.HMS.BaseTest.HMSBaseTest2;
 import com.comcast.HMS.ObjectRepositoryUtility.Add_PatientPage;
 import com.comcast.HMS.ObjectRepositoryUtility.Doctor_DashboardPage;
 
+//@Listeners(com.comcast.HMS.ListenerUtility.Listener_Implementation.class)
 public class Add_PatientTest extends HMSBaseTest2 {
 	
 	@Test()
