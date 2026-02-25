@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.comcast.HMS.DoctorTest.Add_PatientTest"/>
       <class name="com.comcast.HMS.PatientTest.Book_AppointmentTest"/>
     </classes>
   </test> <!-- Test -->

@@ -1,13 +1,12 @@
 package com.comcast.HMS.DoctorTest;
 
 
-import org.testng.annotations.DataProvider;
+
 import org.testng.annotations.Test;
 
 import com.comcast.HMS.BaseTest.HMSBaseTest2;
 import com.comcast.HMS.ObjectRepositoryUtility.Add_PatientPage;
 import com.comcast.HMS.ObjectRepositoryUtility.Doctor_DashboardPage;
-import com.comcast.HMS.generic.fileutility.ExcelUtility;
 
 public class Add_PatientTest extends HMSBaseTest2 {
 	

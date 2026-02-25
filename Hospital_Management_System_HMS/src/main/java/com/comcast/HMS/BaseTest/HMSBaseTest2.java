@@ -1,7 +1,11 @@
 package com.comcast.HMS.BaseTest;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -46,18 +50,20 @@ public class HMSBaseTest2 {
 		HomePage home = PageFactory.initElements(driver, HomePage.class);
 		
 		String browser = file.getDataFromPrpertiesFile("Browser");
-		EdgeOptions options = new EdgeOptions();
+		Map<String , Object > map = new HashMap<>();
+		map.put("profile.password_manager_leak_detection",false);
+		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("prefs", options);
+		options.addArguments("--force-device-scale-factor=0.9");
+		options.addArguments("--high-dpi-support=0.9");
 
-        options.addArguments("--remote-debugging-port=9222");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-gpu");
+
 		if(browser.equalsIgnoreCase("Chrome")) {
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 		}else if(browser.equalsIgnoreCase("Firefox")) {
 			driver = new FirefoxDriver();
 		}else {
-			driver = new EdgeDriver(options);
+			driver = new EdgeDriver();
 	}
 		sdriver = driver;
 		UtilityClassObject.setDriver(driver);
