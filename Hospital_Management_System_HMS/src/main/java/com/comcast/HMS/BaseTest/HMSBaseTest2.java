@@ -2,6 +2,7 @@ package com.comcast.HMS.BaseTest;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
@@ -46,9 +47,11 @@ public class HMSBaseTest2 {
 		String browser = file.getDataFromPrpertiesFile("Browser");
 		if(browser.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
-		}else {
+		}else if(browser.equalsIgnoreCase("Firefox")) {
 			driver = new FirefoxDriver();
-		}
+		}else {
+			driver = new EdgeDriver();
+	}
 		sdriver = driver;
 		UtilityClassObject.setDriver(driver);
 		
@@ -57,7 +60,7 @@ public class HMSBaseTest2 {
 	@BeforeMethod()
 	public void login() throws Exception {
 		String url = file.getDataFromPrpertiesFile("Url");
-		String username = file.getDataFromPrpertiesFile("Doctor");
+		String username = file.getDataFromPrpertiesFile("DoctorLogin");
 		String password = file.getDataFromPrpertiesFile("Password1");
 		Doctor_LoginPage Dlogin = new Doctor_LoginPage(driver);
 		Dlogin.loginToApplication(url, username, password);
