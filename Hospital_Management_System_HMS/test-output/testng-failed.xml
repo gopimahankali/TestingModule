@@ -8,6 +8,8 @@
           <include name="configBC"/>
           <include name="BookAppointment"/>
           <include name="configAS"/>
+          <include name="AppointmentHistory"/>
+          <include name="CheckAppointment"/>
           <include name="configBM"/>
           <include name="ConfigAC"/>
           <include name="closeApp"/>

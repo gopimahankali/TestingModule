@@ -36,7 +36,7 @@ public class HMSBaseTest {
 	protected WebDriverUtility web = new WebDriverUtility();
 	protected JavaUtility java = new JavaUtility();
 	protected WebDriver driver = null;
-	public static WebDriver sdriver = null;
+	public static WebDriver sdriver=null;
 	
 	
 	@BeforeSuite
