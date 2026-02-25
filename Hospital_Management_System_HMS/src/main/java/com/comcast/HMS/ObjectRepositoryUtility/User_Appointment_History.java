@@ -12,7 +12,7 @@ public class User_Appointment_History {
 			this.driver = driver;
 			PageFactory.initElements(driver, this);
 		}
-		@FindBy(xpath = "//a[@href='appointment-history.php?id=247&cancel=update']")
+		@FindBy(xpath = "//a[@href='appointment-history.php?id=246&cancel=update']")
 		private WebElement cancel;
 		
 		public WebElement getCancel() {
