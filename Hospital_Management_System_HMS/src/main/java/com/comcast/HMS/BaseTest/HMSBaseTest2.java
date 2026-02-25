@@ -35,7 +35,6 @@ public class HMSBaseTest2 {
 	protected WebDriverUtility web = new WebDriverUtility();
 	protected JavaUtility java = new JavaUtility();
 	protected WebDriver driver = null;
-	public static WebDriver sdriver = null;
 
 	
 	@BeforeSuite
@@ -47,7 +46,7 @@ public class HMSBaseTest2 {
 	
 	@BeforeClass
 	public void openBrowser() throws Exception {
-	
+		HomePage home = PageFactory.initElements(driver, HomePage.class);
 		String browser = file.getDataFromPrpertiesFile("Browser");
 		ChromeOptions options = new ChromeOptions();
 		Map<String , Object > map = new HashMap<>();
@@ -64,8 +63,6 @@ public class HMSBaseTest2 {
 		}else {
 			driver = new EdgeDriver();
 	}
-		HomePage home = PageFactory.initElements(driver, HomePage.class);
-		sdriver = driver;
 		UtilityClassObject.setDriver(driver);
 		
 	}
