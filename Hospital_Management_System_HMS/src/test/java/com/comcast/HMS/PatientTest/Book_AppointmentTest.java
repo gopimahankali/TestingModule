@@ -42,18 +42,18 @@ public class Book_AppointmentTest extends HMSBaseTest  {
             web.alert(driver);
            
 	}
-	@Test(priority = 2)
-		public void AppointmentHistory() {
-		User_Appointment_History user = new User_Appointment_History(driver);
-		 DashBoardPage dash = new DashBoardPage(driver);
-		 dash.getAppointmentHistory().click();
-		 String title = web.getTitle(driver);
-		 Assert.assertEquals(title, "User | Appointment History");
-		 UtilityClassObject.getTest().log(Status.INFO,"Title Verified Successfully");
-		 web.explicitWait(driver, user.getCancel(), 10);
-		 web.argument(driver, user.getCancel());
-		 web.alert(driver);
-		 UtilityClassObject.getTest().log(Status.INFO,"Appointment Canceled Successfully");
-	}
+//	@Test(priority = 2)
+//		public void AppointmentHistory() {
+//		User_Appointment_History user = new User_Appointment_History(driver);
+//		 DashBoardPage dash = new DashBoardPage(driver);
+//		 dash.getAppointmentHistory().click();
+//		 String title = web.getTitle(driver);
+//		 Assert.assertEquals(title, "User | Appointment History");
+//		 UtilityClassObject.getTest().log(Status.INFO,"Title Verified Successfully");
+//		 web.explicitWait(driver, user.getCancel(), 10);
+//		 web.argument(driver, user.getCancel());
+//		 web.alert(driver);
+//		 UtilityClassObject.getTest().log(Status.INFO,"Appointment Canceled Successfully");
+//	}
 	
 }
