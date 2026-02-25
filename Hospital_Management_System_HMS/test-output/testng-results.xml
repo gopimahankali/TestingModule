@@ -1,212 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-25T17:09:00 IST" name="Default suite" finished-at="2026-02-25T17:09:33 IST" duration-ms="32952">
+  <suite started-at="2026-02-25T18:12:03 IST" name="Default suite" finished-at="2026-02-25T18:12:10 IST" duration-ms="7584">
     <groups>
     </groups>
-    <test started-at="2026-02-25T17:09:00 IST" name="Default test" finished-at="2026-02-25T17:09:33 IST" duration-ms="32952">
+    <test started-at="2026-02-25T18:12:03 IST" name="Default test" finished-at="2026-02-25T18:12:10 IST" duration-ms="7584">
       <class name="com.comcast.HMS.PatientTest.Book_AppointmentTest">
-        <test-method is-config="true" signature="conficBS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:08:59 IST" name="conficBS" finished-at="2026-02-25T17:09:00 IST" duration-ms="711" status="PASS">
+        <test-method is-config="true" signature="conficBS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:02 IST" name="conficBS" finished-at="2026-02-25T18:12:03 IST" duration-ms="610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:09:00 IST" name="configBC" finished-at="2026-02-25T17:09:05 IST" duration-ms="4999" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:03 IST" name="configBC" finished-at="2026-02-25T18:12:04 IST" duration-ms="1210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:09:05 IST" name="configBM" finished-at="2026-02-25T17:09:10 IST" duration-ms="5244" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:04 IST" name="configBM" finished-at="2026-02-25T18:12:06 IST" duration-ms="1637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="BookAppointment()[pri:1, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:09:10 IST" name="BookAppointment" finished-at="2026-02-25T17:09:22 IST" duration-ms="11899" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.111, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\mahan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51157}, goog:processID: 36660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 145.0.7632.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44bb4d4f7ea4bdef8864a85430056915]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.111, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\mahan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51157}, goog:processID: 36660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 145.0.7632.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44bb4d4f7ea4bdef8864a85430056915
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.comcast.HMS.generic.WebDriverUtility.WebDriverUtility.alert(WebDriverUtility.java:97)
-at com.comcast.HMS.PatientTest.Book_AppointmentTest.BookAppointment(Book_AppointmentTest.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="BookAppointment()[pri:1, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:06 IST" name="BookAppointment" finished-at="2026-02-25T18:12:07 IST" duration-ms="1197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookAppointment -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:09:22 IST" name="closeApp" finished-at="2026-02-25T17:09:33 IST" duration-ms="10500" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (44bb4d4f7ea4bdef8864a85430056915)] -> xpath: //a[normalize-space(text())='Log Out']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.111, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\mahan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51157}, goog:processID: 36660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 145.0.7632.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44bb4d4f7ea4bdef8864a85430056915]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (44bb4d4f7ea4bdef8864a85430056915)] -> xpath: //a[normalize-space(text())='Log Out']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.111, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\mahan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51157}, goog:processID: 36660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 145.0.7632.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44bb4d4f7ea4bdef8864a85430056915
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.comcast.HMS.generic.WebDriverUtility.WebDriverUtility.explicitWait(WebDriverUtility.java:49)
-at com.comcast.HMS.BaseTest.HMSBaseTest.closeApp(HMSBaseTest.java:88)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:07 IST" name="closeApp" finished-at="2026-02-25T18:12:08 IST" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:09:33 IST" name="configBM" finished-at="2026-02-25T17:09:33 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:08 IST" name="configBM" finished-at="2026-02-25T18:12:09 IST" duration-ms="960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="AppointmentHistory()[pri:2, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:09:33 IST" name="AppointmentHistory" finished-at="2026-02-25T17:09:33 IST" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (44bb4d4f7ea4bdef8864a85430056915)] -> xpath: //a[normalize-space(text())='Log Out']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.111, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\mahan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51157}, goog:processID: 36660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 145.0.7632.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44bb4d4f7ea4bdef8864a85430056915]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (44bb4d4f7ea4bdef8864a85430056915)] -> xpath: //a[normalize-space(text())='Log Out']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.111, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\mahan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51157}, goog:processID: 36660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 145.0.7632.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44bb4d4f7ea4bdef8864a85430056915
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.comcast.HMS.generic.WebDriverUtility.WebDriverUtility.explicitWait(WebDriverUtility.java:49)
-at com.comcast.HMS.BaseTest.HMSBaseTest.closeApp(HMSBaseTest.java:88)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="AppointmentHistory()[pri:2, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:09 IST" name="AppointmentHistory" finished-at="2026-02-25T18:12:09 IST" duration-ms="689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AppointmentHistory -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:09:33 IST" name="closeApp" finished-at="2026-02-25T17:09:33 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:10 IST" name="closeApp" finished-at="2026-02-25T18:12:10 IST" duration-ms="605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:09:33 IST" name="ConfigAC" finished-at="2026-02-25T17:09:33 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:10 IST" name="ConfigAC" finished-at="2026-02-25T18:12:10 IST" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T17:09:35 IST" name="configAS" finished-at="2026-02-25T17:09:35 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4e08711f]" started-at="2026-02-25T18:12:11 IST" name="configAS" finished-at="2026-02-25T18:12:11 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->

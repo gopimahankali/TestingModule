@@ -1,6 +1,5 @@
 package com.comcast.HMS.BaseTest;
 
-import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,12 +17,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.comcarst.HMS.generic.databaseutility.DatabaseUtility;
-import com.comcast.HMS.ObjectRepositoryUtility.BookAppointmentPage;
 import com.comcast.HMS.ObjectRepositoryUtility.DashBoardPage;
 import com.comcast.HMS.ObjectRepositoryUtility.HomePage;
 import com.comcast.HMS.ObjectRepositoryUtility.LoginPage;
@@ -59,6 +53,8 @@ public class HMSBaseTest {
 		Map<String, Object> set = new HashMap<>();
 		set.put("profile.password_manager_leak_detection",false);
 		opt.setExperimentalOption("prefs", set);
+		opt.addArguments("--force-device-scale-factor=0.9");
+		opt.addArguments("--high-dpi-support=0.9");
 		String browser = file.getDataFromPrpertiesFile("Browser");
 		if(browser.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver(opt);

@@ -6,7 +6,6 @@
       <class name="com.comcast.HMS.PatientTest.Book_AppointmentTest">
         <methods>
           <include name="configBC"/>
-          <include name="BookAppointment"/>
           <include name="AppointmentHistory"/>
           <include name="configAS"/>
           <include name="configBM"/>

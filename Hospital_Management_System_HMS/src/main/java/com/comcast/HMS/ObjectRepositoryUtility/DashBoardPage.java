@@ -12,7 +12,7 @@ public class DashBoardPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//h6[text()='Patient Login']/..//button")
+	@FindBy(xpath = "(//p[contains(@class,'links cl-effect-1')])[2]")
 	private WebElement bookAppointment;
 	@FindBy(xpath = "//a[normalize-space(text())='Log Out']")
 	private WebElement logout;
