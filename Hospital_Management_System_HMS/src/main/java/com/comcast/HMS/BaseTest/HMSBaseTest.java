@@ -1,9 +1,12 @@
 package com.comcast.HMS.BaseTest;
 
 import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -52,15 +55,13 @@ public class HMSBaseTest {
 	public void configBC() throws Exception {
 		HomePage home = PageFactory.initElements(driver, HomePage.class);
 		EdgeOptions options = new EdgeOptions();
-
-        options.addArguments("--remote-debugging-port=9222");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-gpu");
-		
+		ChromeOptions opt = new ChromeOptions();
+		Map<String, Object> set = new HashMap<>();
+		set.put("profile.password_manager_leak_detection",false);
+		opt.setExperimentalOption("prefs", set);
 		String browser = file.getDataFromPrpertiesFile("Browser");
 		if(browser.equalsIgnoreCase("Chrome")) {
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(opt);
 		}else if(browser.equalsIgnoreCase("Firefox")) {
 			driver = new FirefoxDriver();
 		}else {
