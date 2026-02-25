@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.comcast.HMS.PatientTest.Book_AppointmentTest">
+      <class name="com.comcast.HMS.DoctorTest.Add_PatientTest">
         <methods>
-          <include name="configBC"/>
-          <include name="AppointmentHistory"/>
-          <include name="configAS"/>
-          <include name="configBM"/>
-          <include name="ConfigAC"/>
-          <include name="closeApp"/>
+          <include name="addPatient1"/>
           <include name="conficBS"/>
+          <include name="logout"/>
+          <include name="ConfigAC"/>
+          <include name="login"/>
+          <include name="openBrowser"/>
+          <include name="configAS"/>
         </methods>
-      </class> <!-- com.comcast.HMS.PatientTest.Book_AppointmentTest -->
+      </class> <!-- com.comcast.HMS.DoctorTest.Add_PatientTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -50,10 +50,10 @@ public class HMSBaseTest2 {
 		HomePage home = PageFactory.initElements(driver, HomePage.class);
 		
 		String browser = file.getDataFromPrpertiesFile("Browser");
+		ChromeOptions options = new ChromeOptions();
 		Map<String , Object > map = new HashMap<>();
 		map.put("profile.password_manager_leak_detection",false);
-		ChromeOptions options = new ChromeOptions();
-		options.setExperimentalOption("prefs", options);
+		options.setExperimentalOption("prefs", map);
 		options.addArguments("--force-device-scale-factor=0.9");
 		options.addArguments("--high-dpi-support=0.9");
 
