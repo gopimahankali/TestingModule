@@ -5,11 +5,11 @@
     <classes>
       <class name="com.comcast.HMS.DoctorTest.Add_PatientTest">
         <methods>
-          <include name="addPatient1"/>
           <include name="conficBS"/>
-          <include name="logout"/>
-          <include name="ConfigAC"/>
+          <include name="addPatient1"/>
           <include name="login"/>
+          <include name="ConfigAC"/>
+          <include name="logout"/>
           <include name="openBrowser"/>
           <include name="configAS"/>
         </methods>
