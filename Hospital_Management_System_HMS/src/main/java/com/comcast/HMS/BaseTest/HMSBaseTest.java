@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
@@ -50,6 +51,12 @@ public class HMSBaseTest {
 	@BeforeClass
 	public void configBC() throws Exception {
 		HomePage home = PageFactory.initElements(driver, HomePage.class);
+		EdgeOptions options = new EdgeOptions();
+
+        options.addArguments("--remote-debugging-port=9222");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
 		
 		String browser = file.getDataFromPrpertiesFile("Browser");
 		if(browser.equalsIgnoreCase("Chrome")) {
@@ -57,7 +64,7 @@ public class HMSBaseTest {
 		}else if(browser.equalsIgnoreCase("Firefox")) {
 			driver = new FirefoxDriver();
 		}else {
-			driver = new EdgeDriver();
+			driver = new EdgeDriver(options);
 	}
 		sdriver = driver;
 		UtilityClassObject.setDriver(driver);
