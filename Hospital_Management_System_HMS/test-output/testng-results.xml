@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-26T00:45:17 IST" name="Default suite" finished-at="2026-02-26T00:45:27 IST" duration-ms="9226">
+  <suite started-at="2026-02-26T11:51:55 IST" name="Default suite" finished-at="2026-02-26T11:51:59 IST" duration-ms="3903">
     <groups>
     </groups>
-    <test started-at="2026-02-26T00:45:17 IST" name="Default test" finished-at="2026-02-26T00:45:27 IST" duration-ms="9226">
+    <test started-at="2026-02-26T11:51:55 IST" name="Default test" finished-at="2026-02-26T11:51:59 IST" duration-ms="3903">
       <class name="com.comcast.HMS.PatientTest.Book_AppointmentTest">
-        <test-method is-config="true" signature="conficBS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4b2bac3f]" started-at="2026-02-26T00:45:17 IST" name="conficBS" finished-at="2026-02-26T00:45:17 IST" duration-ms="545" status="PASS">
+        <test-method is-config="true" signature="conficBS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@55fe41ea]" started-at="2026-02-26T11:51:54 IST" name="conficBS" finished-at="2026-02-26T11:51:55 IST" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- conficBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4b2bac3f]" started-at="2026-02-26T00:45:17 IST" name="configBC" finished-at="2026-02-26T00:45:18 IST" duration-ms="1123" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@55fe41ea]" started-at="2026-02-26T11:51:55 IST" name="configBC" finished-at="2026-02-26T11:51:56 IST" duration-ms="1286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4b2bac3f]" started-at="2026-02-26T00:45:19 IST" name="configBM" finished-at="2026-02-26T00:45:22 IST" duration-ms="3444" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@55fe41ea]" started-at="2026-02-26T11:51:56 IST" name="configBM" finished-at="2026-02-26T11:51:57 IST" duration-ms="1112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="BookAppointment()[pri:1, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4b2bac3f]" started-at="2026-02-26T00:45:22 IST" name="BookAppointment" finished-at="2026-02-26T00:45:26 IST" duration-ms="3710" status="PASS">
+        <test-method signature="BookAppointment()[pri:1, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@55fe41ea]" started-at="2026-02-26T11:51:57 IST" name="BookAppointment" finished-at="2026-02-26T11:51:58 IST" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookAppointment -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4b2bac3f]" started-at="2026-02-26T00:45:26 IST" name="closeApp" finished-at="2026-02-26T00:45:26 IST" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@55fe41ea]" started-at="2026-02-26T11:51:58 IST" name="closeApp" finished-at="2026-02-26T11:51:58 IST" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4b2bac3f]" started-at="2026-02-26T00:45:26 IST" name="ConfigAC" finished-at="2026-02-26T00:45:27 IST" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="ConfigAC()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@55fe41ea]" started-at="2026-02-26T11:51:58 IST" name="ConfigAC" finished-at="2026-02-26T11:51:59 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@4b2bac3f]" started-at="2026-02-26T00:45:27 IST" name="configAS" finished-at="2026-02-26T00:45:27 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.HMS.PatientTest.Book_AppointmentTest@55fe41ea]" started-at="2026-02-26T11:51:59 IST" name="configAS" finished-at="2026-02-26T11:51:59 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
