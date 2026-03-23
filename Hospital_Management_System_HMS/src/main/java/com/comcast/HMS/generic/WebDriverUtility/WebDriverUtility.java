@@ -10,6 +10,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -253,6 +254,22 @@ public class WebDriverUtility {
 		String title = driver.getTitle();
 		return title;
 
+	}
+
+	public WebDriver  launchBrowser(String browser) {
+		WebDriver driver = null;
+
+		if (browser.equalsIgnoreCase("chrome")) {
+
+			driver = new ChromeDriver();
+
+		} else if (browser.equalsIgnoreCase("firefox")) {
+
+			driver = new FirefoxDriver();
+			} else {
+				driver = new EdgeDriver();
+			}
+		return driver;
 	}
 
 }

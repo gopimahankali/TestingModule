@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import com.comcast.HMS.BaseTest.HMSBaseTest;
 import com.comcast.HMS.ObjectRepositoryUtility.BookAppointmentPage;
 import com.comcast.HMS.ObjectRepositoryUtility.DashBoardPage;
 import com.comcast.HMS.ObjectRepositoryUtility.HomePage;
@@ -31,7 +32,7 @@ import com.comcast.HMS.generic.fileutility.FileUtility;
  *
  * @author Mahan
  */
-public class BookAppointmentTest {
+public class BookAppointmentTest extends HMSBaseTest {
 
 	// Utility class objects
 	FileUtility file = new FileUtility();
@@ -57,7 +58,7 @@ public class BookAppointmentTest {
 		String bookingDate = java.getRequiredDate(10);
 
 		// Launch browser
-		WebDriver driver = web.launchBrowser(browser);
+	
 
 		// Apply browser settings
 		web.maximize(driver);
