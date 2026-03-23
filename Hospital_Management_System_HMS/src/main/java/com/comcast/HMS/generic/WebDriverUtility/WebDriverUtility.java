@@ -41,19 +41,6 @@ public class WebDriverUtility {
 	 * @param browser
 	 * @return WebDriver
 	 */
-	public WebDriver launchBrowser(WebDriver driver, String browser) {
-
-		if (browser.equalsIgnoreCase("chrome")) {
-
-			driver = new ChromeDriver();
-
-		} else {
-
-			driver = new FirefoxDriver();
-		}
-
-		return driver;
-	}
 
 	/**
 	 * This method is used to open application URL.
