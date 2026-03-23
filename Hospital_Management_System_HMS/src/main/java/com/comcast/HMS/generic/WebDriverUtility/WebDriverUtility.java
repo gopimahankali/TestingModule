@@ -35,16 +35,13 @@ import org.testng.Assert;
  * @author Mahan
  */
 public class WebDriverUtility {
-
-	WebDriver driver;
-
 	/**
 	 * This method is used to launch browser based on browser name.
 	 * 
 	 * @param browser
 	 * @return WebDriver
 	 */
-	public WebDriver launchBrowser(String browser) {
+	public WebDriver launchBrowser(WebDriver driver, String browser) {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 

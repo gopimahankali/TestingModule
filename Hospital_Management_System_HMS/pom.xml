@@ -31,7 +31,11 @@ dependencies -->
 			<artifactId>testng</artifactId>
 			<version>7.10.2</version>
 		</dependency>
-
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.21.0</version>
+</dependency>
 		<!-- Apache POI: Used to read and write Excel (.xls) files.
          Helps in data-driven testing by fetching test data from Excel. -->
 		<dependency>
