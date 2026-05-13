@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -82,40 +83,46 @@ public class HMSBaseTest2 {
 	@BeforeClass
 	public void openBrowser() throws Exception {
 
-		// Initialize HomePage using PageFactory (optional initialization)
-		HomePage home = PageFactory.initElements(driver, HomePage.class);
+	    // Read browser name
+	    String browser = System.getProperty("Browser",
+	            file.getDataFromPrpertiesFile("Browser"));
 
-		// Read browser name from properties file
-		String browser = file.getDataFromPrpertiesFile("Browser");
+	    System.out.println(browser);
 
-		// Chrome browser options to disable password popup and adjust scaling
-		ChromeOptions options = new ChromeOptions();
+	    ChromeOptions options = new ChromeOptions();
 
-		Map<String, Object> map = new HashMap<>();
-		map.put("profile.password_manager_leak_detection", false);
+	    Map<String, Object> map = new HashMap<>();
+	    map.put("profile.password_manager_leak_detection", false);
 
-		options.setExperimentalOption("prefs", map);
+	    options.setExperimentalOption("prefs", map);
 
-		options.addArguments("--force-device-scale-factor=0.9");
-		options.addArguments("--high-dpi-support=0.9");
+	    options.addArguments("--force-device-scale-factor=0.9");
+	    options.addArguments("--high-dpi-support=0.9");
 
-		// Launch browser based on configuration
-		if (browser.equalsIgnoreCase("Chrome")) {
+	    // Launch browser
+	    if (browser.equalsIgnoreCase("Chrome")) {
 
-			driver = new ChromeDriver(options);
+	        driver = new ChromeDriver(options);
 
-		} else if (browser.equalsIgnoreCase("Firefox")) {
+	    } else if (browser.equalsIgnoreCase("Firefox")) {
 
-			driver = new FirefoxDriver();
+	        driver = new FirefoxDriver();
 
-		} else {
+	    } else {
 
-			driver = new EdgeDriver();
-		}
+	        driver = new EdgeDriver();
+	    }
 
-		// Store driver globally using UtilityClassObject
-		UtilityClassObject.setDriver(driver);
+	    // Open application
+	    driver.get(file.getDataFromPrpertiesFile("Url"));
 
+	    System.out.println("Title: " + driver.getTitle());
+
+	    // Store globally
+	    UtilityClassObject.setDriver(driver);
+
+	    // Initialize page object AFTER driver creation
+	    HomePage home = PageFactory.initElements(driver, HomePage.class);
 	}
 
 	/**

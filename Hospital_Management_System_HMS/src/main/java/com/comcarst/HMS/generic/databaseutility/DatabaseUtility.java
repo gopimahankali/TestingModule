@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
+
 import com.mysql.cj.jdbc.Driver;
 
 /**
@@ -31,6 +33,7 @@ public class DatabaseUtility {
 	 * 
 	 * @throws Exception
 	 */
+	
 	public void getDbconnection() throws Exception {
 
 		try {
@@ -41,7 +44,7 @@ public class DatabaseUtility {
 			DriverManager.registerDriver(driver);
 
 			// Establish connection with database
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/my_database", "root", "Omsairam@123");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ninzahrm_app", "root", "Omsairam@123");
 
 			System.out.println("Database connection established successfully");
 

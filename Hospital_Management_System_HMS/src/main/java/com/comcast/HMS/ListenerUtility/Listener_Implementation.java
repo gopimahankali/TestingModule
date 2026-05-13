@@ -20,6 +20,7 @@ package com.comcast.HMS.ListenerUtility;
  */
 
 import java.util.Date;
+import java.io.ByteArrayInputStream;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -34,7 +35,10 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.comcast.HMS.generic.WebDriverUtility.ScreenShotUtility;
 import com.comcast.HMS.generic.WebDriverUtility.UtilityClassObject;
+
+import io.qameta.allure.Allure;
 
 public class Listener_Implementation implements ITestListener, ISuiteListener {
 
@@ -132,6 +136,8 @@ public class Listener_Implementation implements ITestListener, ISuiteListener {
 
 		// Attach screenshot to report
 		test.addScreenCaptureFromBase64String(filePath, "Success : " + testName + "-" + time);
+		byte[] screenshot = ScreenShotUtility.takeScreenShot(driver, testName + "-" + time);
+		Allure.addAttachment(testName, new ByteArrayInputStream(screenshot));
 
 		// Log PASS status
 		test.log(Status.PASS, testName + " COMPLETED");
@@ -156,6 +162,8 @@ public class Listener_Implementation implements ITestListener, ISuiteListener {
 
 		// Attach screenshot
 		test.addScreenCaptureFromBase64String(filePath, "Failure : " + testName + "-" + time);
+		byte[] screenshot = ScreenShotUtility.takeScreenShot(driver, testName + "-" + time);
+		Allure.addAttachment(testName, new ByteArrayInputStream(screenshot));
 
 		// Log FAIL status
 		test.log(Status.FAIL, testName + " FAILED");
