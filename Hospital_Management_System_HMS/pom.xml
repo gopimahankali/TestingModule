@@ -52,7 +52,7 @@ dependencies -->
 			<version>2.52.0</version>
 			<scope>compile</scope>
 		</dependency>
-		
+
 		<!-- Apache POI OOXML: Used to read and write Excel (.xlsx) files.
          Required for modern Excel formats. -->
 		<dependency>
@@ -137,7 +137,18 @@ dependencies -->
 
 	<build>
 		<plugins>
-
+		
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+				<configuration>
+					<systemPropertyVariables>
+						<allure.results.directory>target/allure-results</allure.results.directory>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+			
 			<!-- Maven Compiler Plugin:
          Used to compile Java source code.
          Ensures your project compiles using Java 17 version.
