@@ -89,18 +89,19 @@ public class HMSBaseTest2 {
 
 	    System.out.println(browser);
 
-	    ChromeOptions options = new ChromeOptions();
-
-	    Map<String, Object> map = new HashMap<>();
-	    map.put("profile.password_manager_leak_detection", false);
-
-	    options.setExperimentalOption("prefs", map);
-
-	    options.addArguments("--force-device-scale-factor=0.9");
-	    options.addArguments("--high-dpi-support=0.9");
+	    
 
 	    // Launch browser
 	    if (browser.equalsIgnoreCase("Chrome")) {
+	    	ChromeOptions options = new ChromeOptions();
+
+		    Map<String, Object> map = new HashMap<>();
+		    map.put("profile.password_manager_leak_detection", false);
+
+		    options.setExperimentalOption("prefs", map);
+
+		    options.addArguments("--force-device-scale-factor=0.9");
+		    options.addArguments("--high-dpi-support=0.9");
 
 	        driver = new ChromeDriver(options);
 
